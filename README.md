@@ -31,3 +31,4 @@
 1. Create a free Supabase project and run `supabase-schema.sql` in the SQL Editor.
 2. Create a public Storage bucket named `item-photos`.
 3. Add your public `SUPABASE_URL` and `SUPABASE_ANON_KEY` (never the `service_role` key) into `APP_CONFIG.SUPABASE` in `db.js`, implement the `SupabaseAdapter` methods using `@supabase/supabase-js` via ESM CDN, and change `STORAGE_MODE` from `'LOCAL'` to `'SUPABASE'`.
+.
