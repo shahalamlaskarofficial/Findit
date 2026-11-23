@@ -1,0 +1,37 @@
+{
+  "id": "./",
+  "name": "FindIt — Lost Something? Let's Find It.",
+  "short_name": "FindIt",
+  "description": "Community Lost & Found platform. Report lost or found items, submit ownership claims, and track recoveries offline.",
+  "start_url": "./index.html#/",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#f8fafc",
+  "theme_color": "#0f766e",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Report Lost Item",
+      "short_name": "Lost",
+      "url": "./index.html#/report?type=lost"
+    },
+    {
+      "name": "Report Found Item",
+      "short_name": "Found",
+      "url": "./index.html#/report?type=found"
+    },
+    {
+      "name": "Browse Listings",
+      "short_name": "Browse",
+      "url": "./index.html#/browse"
+    }
+  ]
+}
