@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FindIt — Redirecting</title>
+  <script>
+    (function () {
+      var loc = window.location;
+      var parts = loc.pathname.split('/').filter(Boolean);
+      var base = (loc.hostname.endsWith('github.io') && parts.length > 0)
+        ? '/' + parts[0] + '/'
+        : '/';
+      loc.replace(loc.origin + base + 'index.html#/');
+    })();
+  </script>
+</head>
+<body style="font-family:sans-serif;text-align:center;padding:40px;">
+  <h1>FindIt</h1>
+  <p>Redirecting to the app…</p>
+  <a href="./index.html#/">Open FindIt</a>
+</body>
+</html>
