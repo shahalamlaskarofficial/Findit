@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>FindIt — Lost Something? Let's Find It.</title>
+  <meta name="description" content="FindIt Lost & Found platform. Report lost belongings, post found items, verify ownership claims, and track recoveries." />
+  <meta name="theme-color" content="#0f766e" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+
+  <link rel="manifest" href="./manifest.json" />
+  <link rel="icon" type="image/svg+xml" href="./icon.svg" />
+  <link rel="apple-touch-icon" href="./icon.svg" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header id="site-header" class="site-header"></header>
+    <div id="status-bar" class="status-bar" aria-live="polite"></div>
+
+    <main id="main-content" class="main-content" tabindex="-1">
+      <div class="loader-wrap">
+        <div class="spinner" aria-hidden="true"></div>
+        <p>Starting FindIt local database…</p>
+      </div>
+    </main>
+
+    <footer id="site-footer" class="site-footer"></footer>
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile Navigation"></nav>
+  </div>
+
+  <div id="modal-root" class="modal-root" aria-hidden="true"></div>
+  <div id="toast-root" class="toast-root" aria-live="polite"></div>
+
+  <noscript>
+    <p style="padding:24px;font-family:sans-serif;">Please enable JavaScript to run FindIt.</p>
+  </noscript>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
